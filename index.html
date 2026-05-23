@@ -1,382 +1,374 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Pallab Mahato is a Data Scientist specializing in credit risk modeling, predictive analytics, feature stores, decision systems, and business intelligence."
-    />
-    <title>Pallab Mahato | Data Scientist</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#home" aria-label="Go to home">
-        <span class="brand-mark">PM</span>
-        <span>Pallab Mahato</span>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Pallab Mahato | Data Scientist</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+
+<div class="gradient-bg"></div>
+
+<header class="navbar">
+  <div class="logo">PM</div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#interests">Interests</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  
+<button id="theme-toggle" class="theme-btn">☀️</button>
+
+<a class="resume-btn" href="assets/Pallab_Mahato_Data_Scientist_Resume.pdf" target="_blank">
+
+    Resume
+  </a>
+</header>
+
+<section class="hero">
+
+  <div class="hero-left reveal">
+    <div class="tag">
+      DATA SCIENCE • MACHINE LEARNING • CREDIT RISK • AI
+    </div>
+
+    <h1>
+      Exploring the frontiers of
+      <span>technology and data</span>,
+      driven by curiosity and innovation.
+    </h1>
+
+    <p>
+      I’m Pallab Mahato — a Data Scientist working at the intersection of
+      Machine Learning, Risk Analytics, Product Strategy, and Decision Systems.
+      I enjoy building intelligent systems that transform raw data into scalable
+      business impact.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#about" class="primary-btn">Know More</a>
+
+      <a href="assets/Pallab_Mahato_Data_Scientist_Resume.pdf"
+      target="_blank"
+      class="secondary-btn">
+      Download Resume
       </a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="header-cta" href="assets/Pallab_Mahato_Data_Scientist_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
-    </header>
+    </div>
+  </div>
 
-    <main>
-      <section class="hero" id="home">
-        <canvas id="data-canvas" aria-hidden="true"></canvas>
-        <div class="hero-grid">
-          <div class="hero-copy-block reveal">
-            <p class="eyebrow">Data Scientist • Credit Risk • Machine Learning</p>
-            <h1>Production-grade risk models for smarter lending decisions.</h1>
-            <p class="hero-copy">
-              I am Pallab Mahato, a Data Scientist with around 3 years of experience
-              across machine learning, predictive modeling, statistical analysis,
-              credit risk, and business intelligence at Meesho and Godrej Capital.
-            </p>
-            <div class="hero-actions">
-              <a class="button primary" href="#projects">Explore Case Studies</a>
-              <a class="button secondary" href="assets/Pallab_Mahato_Data_Scientist_Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
-              <a class="button ghost" href="mailto:pallabmahato1305@gmail.com">Connect</a>
-            </div>
-          </div>
+  <div class="hero-right reveal delay">
+    <div class="image-wrapper">
+      <img src="assets/profile.jpg" alt="Pallab Mahato"/>
+    </div>
+  </div>
 
-          <aside class="profile-card reveal" aria-label="Profile summary">
-            <div class="photo-shell">
-              <img
-                src="assets/profile.svg"
-                alt="Pallab Mahato profile photo"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
-              />
-              <div class="photo-fallback" aria-hidden="true">PM</div>
-            </div>
-            <div>
-              <h2>Pallab Mahato</h2>
-              <p>Senior Analyst - Data Science at Meesho</p>
-            </div>
-            <div class="profile-links" aria-label="Profile links">
-              <a href="tel:+916296183709">+91 62961 83709</a>
-              <a href="mailto:pallabmahato1305@gmail.com">pallabmahato1305@gmail.com</a>
-              <a href="https://www.linkedin.com/in/pallabmahato13/" target="_blank" rel="noreferrer">linkedin.com/in/pallabmahato13</a>
-              <a href="https://github.com/pallabmahato" target="_blank" rel="noreferrer">github.com/pallabmahato</a>
-            </div>
-          </aside>
-        </div>
+</section>
 
-        <div class="impact-strip reveal" aria-label="Career impact highlights">
-          <div>
-            <strong data-count="3">3</strong>
-            <span>Years in data science and risk analytics</span>
-          </div>
-          <div>
-            <strong data-count="30">30%</strong>
-            <span>Portfolio risk reduction through BNPL risk models</span>
-          </div>
-          <div>
-            <strong data-count="67">67%</strong>
-            <span>Gini on personal loan risk model</span>
-          </div>
-          <div>
-            <strong data-count="500">500+ Cr</strong>
-            <span>Business portfolio influenced through analytics strategy</span>
-          </div>
-        </div>
-      </section>
+<section id="about" class="section reveal">
 
-      <section class="section summary-section reveal" aria-label="Professional summary">
-        <div>
-          <p class="section-kicker">Profile</p>
-          <h2>Data scientist who connects model performance to business outcomes.</h2>
-        </div>
-        <p>
-          My work spans the full analytical lifecycle: feature engineering, model
-          development, validation, deployment support, business rule integration,
-          monitoring, dashboards, and decision frameworks. I specialize in credit
-          risk modeling, underwriting strategy, growth analytics, and production
-          model operations.
-        </p>
-      </section>
+  <div class="section-tag">ABOUT ME</div>
 
-      <section class="section" id="work">
-        <div class="section-heading reveal">
-          <p class="section-kicker">Experience</p>
-          <h2>Professional Work</h2>
-        </div>
-        <div class="experience-list">
-          <article class="experience-card reveal">
-            <div class="experience-meta">
-              <span>Apr 2025 - Present</span>
-              <span>Bangalore, India</span>
-            </div>
-            <div class="experience-body">
-              <h3>Senior Analyst - Data Science</h3>
-              <p class="company">Meesho</p>
-              <ul>
-                <li>Developed and deployed XGBoost BNPL risk models using Meesho behavioral features and bureau data, reducing portfolio risk by 30%.</li>
-                <li>Scaled whitelist volume from 20L to 12Cr through improved model-driven risk segmentation and decisioning.</li>
-                <li>Built a LightGBM adoption model to predict post-application conversion propensity, enabling targeted discounting and a 5% uplift in NMV.</li>
-                <li>Designed an inferential personal loan risk model with off-us bureau features, achieving 67% Gini and enabling real-time underwriting integration.</li>
-                <li>Built a scalable feature store generating 110K+ daily user-level features for real-time and offline model consumption.</li>
-                <li>Translated model outputs into BRE policies for underwriting rules, limit assignment, risk-based pricing, and portfolio risk-return optimization.</li>
-              </ul>
-            </div>
-          </article>
+  <h2 class="about-heading">
+    Building intelligent data products and scalable decision systems
+    at the intersection of Machine Learning, Analytics, and Financial Technology.
+  </h2>
 
-          <article class="experience-card reveal">
-            <div class="experience-meta">
-              <span>Jun 2023 - Apr 2025</span>
-              <span>Mumbai, India</span>
-            </div>
-            <div class="experience-body">
-              <h3>Assistant Manager - Data Science and Risk Analytics</h3>
-              <p class="company">Godrej Capital</p>
-              <ul>
-                <li>Built behavioral scorecards with XGBoost, improving customer retention by 25% and collections efficiency by 30%.</li>
-                <li>Designed logistic regression foreclosure prediction models to identify high-risk customers and reduce foreclosure by 37% over 3 months.</li>
-                <li>Implemented an NLP auto-tagging system with NLTK, saving 14+ hours weekly in service request resolution time.</li>
-                <li>Engineered ARIMA forecasting models for home loan and LAP tranches, reducing cost provisioning errors by 30%.</li>
-                <li>Built Tableau dashboards for real-time risk KPI tracking, saving 8+ hours weekly and accelerating business decisions.</li>
-                <li>Designed analytics strategy for a 500+ Cr monthly cross-sell portfolio with risk, policy, and product teams.</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </section>
+  <div class="about-grid">
 
-      <section class="section projects-section" id="projects">
-        <div class="section-heading reveal">
-          <p class="section-kicker">Selected Case Studies</p>
-          <h2>Projects With Measurable Impact</h2>
-        </div>
-        <div class="case-grid">
-          <article class="case-card reveal">
-            <div class="case-topline">
-              <span>Credit Risk Modeling</span>
-              <strong>Meesho</strong>
-            </div>
-            <h3>BNPL Risk Model Suite</h3>
-            <p>
-              Developed two production XGBoost risk models: one using Meesho behavioral
-              features and one combining Meesho plus bureau data. The models improved
-              underwriting precision, scaled whitelist eligibility, and supported portfolio
-              risk controls.
-            </p>
-            <div class="case-impact">
-              <span>30% portfolio risk reduction</span>
-              <span>20L to 12Cr whitelist scale</span>
-              <span>XGBoost, Python, bureau data</span>
-            </div>
-          </article>
+    <p class="about-text">
+      I specialize in Data Science, Credit Risk Analytics, and Machine Learning,
+      with experience developing production-grade underwriting models,
+      feature engineering pipelines, forecasting systems, and real-time
+      decision frameworks. My work focuses on transforming complex data
+      into scalable business impact across fintech and lending ecosystems.
+    </p>
 
-          <article class="case-card reveal">
-            <div class="case-topline">
-              <span>Real-Time Decisioning</span>
-              <strong>Meesho</strong>
-            </div>
-            <h3>Feature Store and BRE Integration</h3>
-            <p>
-              Built a scalable user-level feature layer for low-latency model consumption,
-              then mapped model outputs into real-time BRE policies for underwriting,
-              decision rules, limit assignment, and risk-based pricing.
-            </p>
-            <div class="case-impact">
-              <span>110K+ daily features</span>
-              <span>Real-time and offline consumption</span>
-              <span>PySpark, SQL, BigQuery, GCP</span>
-            </div>
-          </article>
+    <p class="about-text">
+      Beyond analytics, I’m deeply driven by curiosity, continuous learning,
+      and technology-led innovation. Outside work, I enjoy football,
+      hiking in the mountains, music, travelling, and exploring ideas
+      across AI, systems design, and product thinking.
+    </p>
 
-          <article class="case-card reveal">
-            <div class="case-topline">
-              <span>Propensity Modeling</span>
-              <strong>Meesho</strong>
-            </div>
-            <h3>Adoption and Conversion Propensity</h3>
-            <p>
-              Built a LightGBM model to predict post-application conversion propensity,
-              enabling sharper segmentation for high-intent users and better targeting of
-              business interventions such as discounting.
-            </p>
-            <div class="case-impact">
-              <span>5% NMV uplift</span>
-              <span>High-intent targeting</span>
-              <span>LightGBM, feature engineering</span>
-            </div>
-          </article>
+  </div>
 
-          <article class="case-card reveal">
-            <div class="case-topline">
-              <span>Risk Scorecards</span>
-              <strong>Godrej Capital</strong>
-            </div>
-            <h3>Foreclosure and Retention Risk Models</h3>
-            <p>
-              Built behavioral scorecards and foreclosure risk models to prioritize early
-              interventions, optimize pre-foreclosure offers, improve customer retention,
-              and strengthen risk-based collections strategy.
-            </p>
-            <div class="case-impact">
-              <span>25% customer retention improvement</span>
-              <span>37% foreclosure reduction</span>
-              <span>XGBoost, logistic regression</span>
-            </div>
-          </article>
+</section>
 
-          <article class="case-card reveal">
-            <div class="case-topline">
-              <span>NLP Automation</span>
-              <strong>Godrej Capital</strong>
-            </div>
-            <h3>Service Request Auto-Tagging</h3>
-            <p>
-              Implemented an NLP classification workflow to auto-tag service requests,
-              reducing manual resolution effort and improving operational turnaround for
-              recurring customer support categories.
-            </p>
-            <div class="case-impact">
-              <span>14+ hours saved weekly</span>
-              <span>Faster request resolution</span>
-              <span>NLTK, Python, text classification</span>
-            </div>
-          </article>
+<section id="experience" class="section">
 
-          <article class="case-card reveal">
-            <div class="case-topline">
-              <span>Forecasting and BI</span>
-              <strong>Godrej Capital</strong>
-            </div>
-            <h3>Portfolio Monitoring Dashboards</h3>
-            <p>
-              Engineered ARIMA forecasts and Tableau dashboards for real-time risk KPI
-              monitoring, helping stakeholders detect trends, reduce manual reporting, and
-              act faster on portfolio risk signals.
-            </p>
-            <div class="case-impact">
-              <span>30% lower provisioning errors</span>
-              <span>8+ hours saved weekly</span>
-              <span>ARIMA, Tableau, SQL</span>
-            </div>
-          </article>
-        </div>
-      </section>
+  <div class="section-tag reveal">EXPERIENCE</div>
 
-      <section class="section split-section" id="skills">
-        <div class="section-heading reveal">
-          <p class="section-kicker">Toolkit</p>
-          <h2>Technical Skills</h2>
-        </div>
-        <div class="skills-grid">
-          <article class="skill-panel reveal">
-            <h3>Programming and Data</h3>
-            <p>Python, SQL, R, PySpark, Pandas, Scikit-learn, Jupyter Notebook</p>
-          </article>
-          <article class="skill-panel reveal">
-            <h3>Machine Learning</h3>
-            <p>Regression, XGBoost, LightGBM, clustering, NLP, time series, ARIMA, feature engineering, model monitoring</p>
-          </article>
-          <article class="skill-panel reveal">
-            <h3>Cloud and Tools</h3>
-            <p>Google Cloud Platform, BigQuery, Cloud Storage, Tableau, R-Studio, Advanced Excel, Git</p>
-          </article>
-          <article class="skill-panel reveal">
-            <h3>Domain Expertise</h3>
-            <p>Credit risk modeling, underwriting strategy, customer segmentation, business intelligence, data visualization</p>
-          </article>
-        </div>
-      </section>
+  <div class="experience-card reveal">
+    <div class="experience-year">2025 - Present</div>
 
-      <section class="section education-section" id="education">
-        <div class="section-heading reveal">
-          <p class="section-kicker">Education</p>
-          <h2>Academic Background</h2>
-        </div>
-        <div class="education-table reveal" role="table" aria-label="Education">
-          <div class="education-row table-head" role="row">
-            <span>Year</span>
-            <span>Degree / Certificate</span>
-            <span>Institute</span>
-            <span>CGPA / %</span>
-          </div>
-          <div class="education-row" role="row">
-            <span>2018 - 2023</span>
-            <span>B.S. - M.S. Physics</span>
-            <span>Indian Institute of Technology, Kanpur</span>
-            <span>UG - 8.4 | PG - 7.3</span>
-          </div>
-          <div class="education-row" role="row">
-            <span>2018</span>
-            <span>XII, WBCHSE</span>
-            <span>Ramakrishna Mission Vidyapith, Purulia</span>
-            <span>91.6%</span>
-          </div>
-          <div class="education-row" role="row">
-            <span>2016</span>
-            <span>X, WBBSE</span>
-            <span>Barabhum Higher Secondary School</span>
-            <span>94.8%</span>
-          </div>
-        </div>
-      </section>
+    <div class="experience-content">
+      <h3>Senior Analyst — Data Science</h3>
+      <h4>Meesho • Bangalore, India</h4>
 
-      <section class="section achievements-section">
-        <div class="section-heading reveal">
-          <p class="section-kicker">Recognition</p>
-          <h2>Achievements</h2>
-        </div>
-        <div class="achievement-grid">
-          <article class="achievement-card reveal">
-            <strong>Quarterly Performance Champion</strong>
-            <p>Recognized as a top performer in analytics at Godrej Capital for Q1 FY25.</p>
-          </article>
-          <article class="achievement-card reveal">
-            <strong>Kudos Award</strong>
-            <p>Received for driving data-driven decisions impacting 500+ Cr business outcomes.</p>
-          </article>
-          <article class="achievement-card reveal">
-            <strong>JEE Advanced 2018</strong>
-            <p>Secured AIR 2543, placing in the top 0.5% nationwide.</p>
-          </article>
-          <article class="achievement-card reveal">
-            <strong>Senior Executive, Udghosh'19</strong>
-            <p>Led a 30+ member team for a national-level IIT Kanpur fest with 1600+ participants.</p>
-          </article>
-        </div>
-      </section>
+      <ul>
+        <li>Built and deployed production-grade XGBoost BNPL risk models reducing portfolio risk by 30%</li>
+        <li>Scaled whitelist volume from 20L to 12Cr through intelligent segmentation</li>
+        <li>Developed LightGBM adoption models improving NMV by 5%</li>
+        <li>Designed feature stores and real-time underwriting systems</li>
+        <li>Integrated ML outputs into scalable BRE decision frameworks</li>
+      </ul>
+    </div>
+  </div>
 
-      <section class="contact-section" id="contact">
-        <div class="contact-copy reveal">
-          <p class="section-kicker">Connect With Me</p>
-          <h2>Open to data science roles across credit risk, ML, and analytics.</h2>
-          <p>
-            Reach out for roles or projects involving risk modeling, model deployment,
-            underwriting strategy, product analytics, dashboards, or decision systems.
-          </p>
-        </div>
-        <div class="contact-actions reveal">
-          <a class="button primary" href="mailto:pallabmahato1305@gmail.com">Email</a>
-          <a class="button secondary" href="tel:+916296183709">Call</a>
-          <a class="button secondary" href="assets/Pallab_Mahato_Data_Scientist_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
-          <a class="button secondary" href="https://www.linkedin.com/in/pallabmahato13/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="button secondary" href="https://github.com/pallabmahato" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
-      </section>
-    </main>
+  <div class="experience-card reveal">
+    <div class="experience-year">2023 - 2025</div>
 
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Pallab Mahato. Data Scientist.</p>
-      <a href="#home">Back to top</a>
-    </footer>
+    <div class="experience-content">
+      <h3>Assistant Manager — Data Science & Risk Analytics</h3>
+      <h4>Godrej Capital • Mumbai, India</h4>
 
-    <script src="script.js"></script>
-  </body>
+      <ul>
+        <li>Built behavioral scorecards improving retention by 25%</li>
+        <li>Reduced foreclosure by 37% using predictive models</li>
+        <li>Implemented NLP automation systems using NLTK</li>
+        <li>Built forecasting systems and monitoring dashboards</li>
+        <li>Worked on analytics strategy for ₹500+ Cr cross-sell business</li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+
+
+<section id="projects" class="section reveal">
+
+<div class="section-tag">PROJECTS & IMPACT</div>
+
+<div class="cards-grid">
+
+<div class="mini-card">
+<h4>BNPL Risk Modeling</h4>
+<p>
+Developed production-grade XGBoost risk models using behavioral and bureau features, reducing portfolio risk by 30% while scaling whitelist volume from 20L to 12Cr.
+</p>
+</div>
+
+<div class="mini-card">
+<h4>Feature Store Infrastructure</h4>
+<p>
+Built scalable feature store pipelines generating 110K+ user-level features daily for real-time and offline ML systems.
+</p>
+</div>
+
+<div class="mini-card">
+<h4>Personal Loan Underwriting Model</h4>
+<p>
+Designed inferential Personal Loan risk models using bureau data achieving 67% Gini and enabling real-time underwriting.
+</p>
+</div>
+
+<div class="mini-card">
+<h4>Adoption & Propensity Modeling</h4>
+<p>
+Built LightGBM conversion models improving NMV by 5% through intelligent targeting and segmentation.
+</p>
+</div>
+
+<div class="mini-card">
+<h4>Forecasting & Monitoring Systems</h4>
+<p>
+Created ARIMA forecasting systems and Tableau dashboards reducing provisioning errors and improving strategic visibility.
+</p>
+</div>
+
+<div class="mini-card">
+<h4>NLP Automation Systems</h4>
+<p>
+Implemented NLP-based auto-tagging systems reducing operational effort and improving request resolution efficiency.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="education" class="section reveal">
+
+  <div class="section-tag">EDUCATION</div>
+
+  <div class="edu-card">
+    <h3>Indian Institute of Technology Kanpur</h3>
+
+    <div class="edu-meta">
+      BS-MS in Physics • CPI: 8.4/10
+      <br/>
+      2018 - 2023 • Kanpur, India
+    </div>
+
+    <p>
+      Dream place to fulfil my dreams.
+      The place where I explored research, technology,
+      leadership, and discovered my passion for data science.
+    </p>
+  </div>
+
+  <div class="edu-card">
+    <h3>Ramakrishna Mission Vidyapith, Purulia</h3>
+
+    <div class="edu-meta">
+      XII, WBCHSE • Percentage: 91.6%
+      <br/>
+      2018 • Purulia, India
+    </div>
+
+    <p>
+      A transformative phase of discipline, values, and self-growth.
+      The environment that deeply shaped my mindset and ambition.
+    </p>
+  </div>
+
+  <div class="edu-card">
+    <h3>Barabhum Higher Secondary School</h3>
+
+    <div class="edu-meta">
+      X, WBBSE • Percentage: 94.8%
+      <br/>
+      2016 • Purulia, India
+    </div>
+
+    <p>
+      A place where my roots lie.
+      The foundation that shaped my discipline,
+      curiosity, and ambition.
+    </p>
+  </div>
+
+</section>
+
+
+<section id="skills" class="section reveal">
+
+<div class="section-tag">SKILLS & TOOLKIT</div>
+
+<div class="interest-tags">
+<span>Python</span>
+<span>SQL</span>
+<span>Machine Learning</span>
+<span>XGBoost</span>
+<span>LightGBM</span>
+<span>PySpark</span>
+<span>Scikit-learn</span>
+<span>Google Cloud Platform</span>
+<span>BigQuery</span>
+<span>Tableau</span>
+<span>Risk Analytics</span>
+<span>Forecasting</span>
+<span>NLP</span>
+<span>Feature Engineering</span>
+<span>Model Monitoring</span>
+<span>Credit Risk</span>
+</div>
+
+</section>
+
+<section id="interests" class="section reveal">
+
+  <div class="section-tag">AREAS OF INTEREST</div>
+
+  <div class="interest-tags">
+    <span>Machine Learning</span>
+    <span>Artificial Intelligence</span>
+    <span>Deep Learning</span>
+    <span>NLP</span>
+    <span>Credit Risk Analytics</span>
+    <span>Product Analytics</span>
+    <span>Decision Systems</span>
+<span>Generative AI</span>
+<span>LLMs</span>
+<span>MLOps</span>
+<span>Recommendation Systems</span>
+<span>AI Products</span>
+  </div>
+
+  <div class="section-tag extra-space">LIFE BEYOND WORK</div>
+
+  <div class="cards-grid">
+
+    <div class="mini-card">
+      <h4>Sports</h4>
+      <p>
+        I play football, badminton, and volleyball during weekends.
+        Sports help me stay competitive and mentally fresh.
+      </p>
+    </div>
+
+    <div class="mini-card">
+      <h4>Travel & Hiking</h4>
+      <p>
+        Love exploring mountains, nature, and peaceful places.
+        Hiking and travel give me clarity and inspiration.
+      </p>
+    </div>
+
+    <div class="mini-card">
+      <h4>Football Passion</h4>
+      <p>
+        Bayern Munich supporter forever.
+        Mia San Mia.
+      </p>
+    </div>
+
+    <div class="mini-card">
+      <h4>Music & Creativity</h4>
+      <p>
+        Love listening to music and currently trying to learn guitar.
+      </p>
+    </div>
+
+    <div class="mini-card">
+      <h4>Movies & Series</h4>
+      <p>
+        Huge fan of crime and thriller genres.
+        Always fascinated by intelligent storytelling.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="contact" class="contact reveal">
+
+  <h2>Let’s Build Something Meaningful.</h2>
+
+  <p>
+    Open to opportunities across Data Science,
+    Machine Learning, Product Analytics,
+    and Credit Risk.
+  </p>
+
+  <div class="contact-links">
+    <a href="mailto:pallabmahato1305@gmail.com">Email</a>
+    <a href="https://github.com/pallabmahato" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/pallabmahato13/" target="_blank">LinkedIn</a>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Pallab Mahato
+</footer>
+
+<script src="script.js"></script>
+
+</body>
 </html>
