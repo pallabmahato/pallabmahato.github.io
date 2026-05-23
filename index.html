@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A modern portfolio website for a data science professional."
+    />
+    <title>Data Science Portfolio | Pallab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark">DS</span>
+        <span>Pallab Data Lab</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="#contact">Hire Me</a>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <canvas id="data-canvas" aria-hidden="true"></canvas>
+        <div class="hero-content">
+          <p class="eyebrow">Data Scientist • Machine Learning • Analytics</p>
+          <h1>Pallab turns messy data into clear decisions.</h1>
+          <p class="hero-copy">
+            I build predictive models, interactive dashboards, and business-ready
+            analytics systems that help teams understand what happened, what will
+            happen next, and what to do about it.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="mailto:hello@example.com">Email Me</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Portfolio highlights">
+          <div class="metric">
+            <strong>92%</strong>
+            <span>Model accuracy on churn prediction</span>
+          </div>
+          <div class="metric">
+            <strong>38%</strong>
+            <span>Faster reporting through dashboard automation</span>
+          </div>
+          <div class="metric">
+            <strong>12+</strong>
+            <span>End-to-end analytics projects delivered</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section intro-band" aria-label="Core value">
+        <div>
+          <p class="section-kicker">What I Do</p>
+          <h2>Analytics that moves from notebook to business impact.</h2>
+        </div>
+        <p>
+          I work across the full data lifecycle: problem framing, data cleaning,
+          statistical analysis, feature engineering, model training, deployment
+          support, and decision dashboards for stakeholders.
+        </p>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="section-kicker">Selected Work</p>
+          <h2>Projects</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-visual churn">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="project-body">
+              <p class="tag">Machine Learning</p>
+              <h3>Customer Churn Predictor</h3>
+              <p>
+                Built a classification model that flags high-risk customers and
+                explains retention drivers with feature importance.
+              </p>
+              <ul>
+                <li>Python, scikit-learn, SHAP</li>
+                <li>ROC-AUC: 0.91</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual revenue">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="project-body">
+              <p class="tag">Business Intelligence</p>
+              <h3>Revenue Intelligence Dashboard</h3>
+              <p>
+                Designed a KPI dashboard for sales, funnel health, regional
+                performance, and weekly forecast variance.
+              </p>
+              <ul>
+                <li>SQL, Power BI, DAX</li>
+                <li>Saved 9 hours weekly</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual forecast">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="project-body">
+              <p class="tag">Forecasting</p>
+              <h3>Demand Forecasting Model</h3>
+              <p>
+                Forecasted inventory demand using seasonality, pricing, campaign
+                signals, and historical sales behavior.
+              </p>
+              <ul>
+                <li>Prophet, pandas, NumPy</li>
+                <li>Reduced stockouts by 24%</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section" id="skills">
+        <div class="section-heading">
+          <p class="section-kicker">Toolbox</p>
+          <h2>Skills</h2>
+        </div>
+        <div class="skills-layout">
+          <div class="skill-list">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>Machine Learning</span>
+            <span>Deep Learning</span>
+            <span>Statistics</span>
+            <span>Power BI</span>
+            <span>Tableau</span>
+            <span>Excel</span>
+            <span>Data Cleaning</span>
+            <span>Feature Engineering</span>
+            <span>A/B Testing</span>
+            <span>Storytelling</span>
+          </div>
+          <div class="capability-list">
+            <div>
+              <h3>Predictive Modeling</h3>
+              <p>Classification, regression, forecasting, clustering, and model evaluation.</p>
+            </div>
+            <div>
+              <h3>Decision Dashboards</h3>
+              <p>Executive views, KPI systems, drilldowns, and automated reporting flows.</p>
+            </div>
+            <div>
+              <h3>Data Strategy</h3>
+              <p>Metric design, experiment planning, data quality checks, and insight delivery.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="experience">
+        <div class="section-heading">
+          <p class="section-kicker">Background</p>
+          <h2>Experience</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <time>2025 - Present</time>
+            <h3>Data Science Freelancer</h3>
+            <p>
+              Deliver machine learning models, dashboards, and analytics workflows
+              for startups and small businesses.
+            </p>
+          </article>
+          <article>
+            <time>2024 - 2025</time>
+            <h3>Analytics Project Lead</h3>
+            <p>
+              Led customer, sales, and operations analysis projects with Python,
+              SQL, and BI tools.
+            </p>
+          </article>
+          <article>
+            <time>2023 - 2024</time>
+            <h3>Data Science Learner</h3>
+            <p>
+              Built a portfolio of supervised learning, NLP, time-series, and
+              visualization projects.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Have a data problem worth solving?</h2>
+          <p>
+            Send me the goal, the dataset you have, and the decision you want to
+            improve. I will help turn it into a practical analytics project.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:hello@example.com">hello@example.com</a>
+          <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button secondary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Pallab Data Lab. Built for GitHub Pages.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
