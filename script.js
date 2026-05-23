@@ -15,12 +15,12 @@ function resizeCanvas() {
   canvas.width = Math.floor(width * ratio);
   canvas.height = Math.floor(height * ratio);
   context.setTransform(ratio, 0, 0, ratio, 0, 0);
-  points = Array.from({ length: 42 }, (_, index) => ({
-    x: (index / 41) * width,
-    base: height * (0.32 + Math.random() * 0.34),
-    speed: 0.008 + Math.random() * 0.014,
+  points = Array.from({ length: 54 }, (_, index) => ({
+    x: (index / 53) * width,
+    base: height * (0.28 + Math.random() * 0.42),
+    speed: 0.006 + Math.random() * 0.012,
     phase: Math.random() * Math.PI * 2,
-    radius: 3 + Math.random() * 4,
+    radius: 2.6 + Math.random() * 3.8,
   }));
 }
 
@@ -28,21 +28,21 @@ function draw(timestamp) {
   context.clearRect(0, 0, width, height);
 
   const gradient = context.createLinearGradient(0, 0, width, height);
-  gradient.addColorStop(0, "rgba(15, 123, 99, 0.16)");
-  gradient.addColorStop(0.52, "rgba(212, 86, 69, 0.12)");
-  gradient.addColorStop(1, "rgba(46, 111, 158, 0.14)");
+  gradient.addColorStop(0, "rgba(8, 119, 103, 0.12)");
+  gradient.addColorStop(0.5, "rgba(190, 93, 69, 0.09)");
+  gradient.addColorStop(1, "rgba(40, 108, 148, 0.12)");
   context.fillStyle = gradient;
   context.fillRect(0, 0, width, height);
 
-  context.lineWidth = 2;
-  context.strokeStyle = "rgba(23, 33, 29, 0.2)";
+  context.lineWidth = 1.6;
+  context.strokeStyle = "rgba(21, 26, 24, 0.18)";
   context.beginPath();
 
   points.forEach((point, index) => {
     const y =
       point.base +
-      Math.sin(timestamp * point.speed + point.phase) * 36 +
-      Math.cos(timestamp * point.speed * 0.7 + point.phase) * 18;
+      Math.sin(timestamp * point.speed + point.phase) * 30 +
+      Math.cos(timestamp * point.speed * 0.65 + point.phase) * 15;
 
     if (index === 0) {
       context.moveTo(point.x, y);
@@ -56,15 +56,17 @@ function draw(timestamp) {
   points.forEach((point, index) => {
     const y =
       point.base +
-      Math.sin(timestamp * point.speed + point.phase) * 36 +
-      Math.cos(timestamp * point.speed * 0.7 + point.phase) * 18;
+      Math.sin(timestamp * point.speed + point.phase) * 30 +
+      Math.cos(timestamp * point.speed * 0.65 + point.phase) * 15;
 
     context.fillStyle =
-      index % 3 === 0
-        ? "rgba(212, 86, 69, 0.76)"
-        : index % 3 === 1
-          ? "rgba(15, 123, 99, 0.78)"
-          : "rgba(46, 111, 158, 0.72)";
+      index % 4 === 0
+        ? "rgba(190, 93, 69, 0.68)"
+        : index % 4 === 1
+          ? "rgba(8, 119, 103, 0.7)"
+          : index % 4 === 2
+            ? "rgba(40, 108, 148, 0.62)"
+            : "rgba(183, 132, 37, 0.58)";
     context.beginPath();
     context.arc(point.x, y, point.radius, 0, Math.PI * 2);
     context.fill();
@@ -76,3 +78,18 @@ function draw(timestamp) {
 resizeCanvas();
 requestAnimationFrame(draw);
 window.addEventListener("resize", resizeCanvas);
+
+const revealItems = document.querySelectorAll(".reveal");
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.12 }
+);
+
+revealItems.forEach((item) => revealObserver.observe(item));

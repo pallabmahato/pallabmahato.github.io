@@ -1,12 +1,14 @@
-# Data Science Portfolio
+# Pallab Mahato Data Science Portfolio
 
-A static portfolio website for a data science professional. It is built with plain HTML, CSS, and JavaScript, so it can be hosted for free on GitHub Pages without a build step.
+A static GitHub Pages portfolio for Pallab Mahato, focused on credit risk modeling, production machine learning, decision systems, and business analytics.
 
 ## Customize
 
-- Edit `index.html` to change the name, email, links, projects, metrics, skills, and experience.
+- Edit `index.html` to change the name, email, links, projects, metrics, skills, education, and experience.
 - Edit `styles.css` to adjust the visual style.
 - Edit `script.js` to change the animated data visualization in the hero.
+- Replace `assets/profile.svg` with a high-resolution LinkedIn profile image when available.
+- Replace `assets/Pallab_Mahato_Data_Scientist_Resume.pdf` when the resume is updated.
 
 ## Run Locally
 
@@ -21,7 +23,7 @@ Then open `http://localhost:8000`.
 ## Host on GitHub Pages
 
 1. Create a new public GitHub repository.
-2. Upload `index.html`, `styles.css`, `script.js`, and `README.md`.
+2. Upload `index.html`, `styles.css`, `script.js`, `README.md`, and the `assets` folder.
 3. Go to repository `Settings` > `Pages`.
 4. Under `Build and deployment`, choose `Deploy from a branch`.
 5. Select the `main` branch and `/root`, then save.

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-label="Pallab Mahato profile placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e7eee8"/>
+      <stop offset="0.52" stop-color="#fffdf8"/>
+      <stop offset="1" stop-color="#e8dccb"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#087767"/>
+      <stop offset="1" stop-color="#286c94"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#bg)"/>
+  <circle cx="946" cy="216" r="92" fill="#be5d45" opacity=".14"/>
+  <circle cx="214" cy="918" r="130" fill="#087767" opacity=".12"/>
+  <path d="M170 755 C315 610 452 790 590 640 C726 492 829 558 1032 374" fill="none" stroke="#151a18" stroke-opacity=".13" stroke-width="12"/>
+  <g fill="url(#mark)">
+    <circle cx="170" cy="755" r="20"/>
+    <circle cx="590" cy="640" r="20"/>
+    <circle cx="1032" cy="374" r="20"/>
+  </g>
+  <text x="600" y="640" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="250" font-weight="900" fill="#087767">PM</text>
+  <text x="600" y="740" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" fill="#151a18">Pallab Mahato</text>
+  <text x="600" y="810" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#626d68">Data Scientist</text>
+</svg>
